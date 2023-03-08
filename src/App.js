@@ -5,11 +5,12 @@ import Vision from './pages/vision';
 import Team from './pages/team';
 import Footer from './Layout/Footer';
 import Header from './Layout/Header';
+import NavigationBar from './Layout/NavigationBar';
 function App() {
   return (
     <div>
       <BrowserRouter>
-      <Header/>
+      <NavigationBar/>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/vision' element={<Vision/>}></Route>
