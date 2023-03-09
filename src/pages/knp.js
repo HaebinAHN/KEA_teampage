@@ -12,7 +12,7 @@ const Knp = () => {
     <div className='body'>
       
         <ul className="pagination">
-          <li className="page-item">
+          <li className={`page-item ${currentPage === 1 && "disabled"}`}>
             <a className="page-link" href="#" onClick={() => handlePageClick(currentPage - 1)}>
               Previous
             </a>
