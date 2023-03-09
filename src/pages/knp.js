@@ -9,11 +9,8 @@ const Knp = () => {
   };
 
   return (
-    <div>
-       
+    <div className='body'>
       
-
-      <nav aria-label="Page navigation example">
         <ul className="pagination">
           <li className="page-item">
             <a className="page-link" href="#" onClick={() => handlePageClick(currentPage - 1)}>
@@ -43,7 +40,6 @@ const Knp = () => {
             </a>
           </li>
         </ul>
-      </nav>
 
       {/* 현재 페이지 번호에 따라 다른 화면을 표시하는 IFrame */}
       <div style={{ marginTop: "20px"} }>

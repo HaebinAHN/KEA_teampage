@@ -3,8 +3,6 @@ import Home from './pages/home';
 import Knp from './pages/knp';
 import Vision from './pages/vision';
 import Team from './pages/team';
-import Footer from './Layout/Footer';
-import Header from './Layout/Header';
 import NavigationBar from './Layout/NavigationBar';
 function App() {
   return (
@@ -17,7 +15,6 @@ function App() {
           <Route path='/team' element={<Team/>}></Route>
           <Route path='/knp' element={<Knp/>}></Route>
         </Routes>
-      <Footer/>
       </BrowserRouter>
     </div>
   );
