@@ -29,12 +29,29 @@
     font-size:x-large;
 }
 
+
 .introduce {
     width: 100%;
-    font-style: italic;
-    ;
-    font-size: x-large;
+    font-size: 130px;
     margin-top: 40px;
+    text-align: center;
+    font-style: italic;
+
+}
+
+.introduce h1 {
+    width: 100%;
+    font-size: 130px;
+    margin-top: 40px;
+    text-align: center;
+    font-style: italic;
+
+}
+
+.introduce h2 {
+    width: 100%;
+    font-size: 30px;
+    margin-top: 10px;
     text-align: center;
     font-style: italic;
 
@@ -46,7 +63,6 @@
     max-width: fit-content;
     text-align: center;
     font-style: normal;
-    font-weight: bold;
 
 }
 

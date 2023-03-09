@@ -1,26 +1,38 @@
 import './css/pages.css';
 import vision from '../images/vision.png';
 import logo from '../images/team_logo.png';
-const Vision = () =>{
+const Vision = () => {
     return (
-    <div className = 'body'>
-    <div>
-    <p className='sub_title'>
-    비전
-    </p>
-    <p className = 'vis'>카카오를 위한 99퍼센트의 노력과 1퍼센트의 열정</p>
-    </div>
-    <div>
-    <div className='pp'>저희 그룹이름인 카카오 99퍼센트의 의미는 "카카오 99퍼센트 초콜릿처럼 저희도 카카오와 그만큼 가까워지겠다"는 의미와
-        그만큼 이 프로젝트에 열심히 하겠다는 각오를 내포하고 있습니다. <br/> 또한 저희 그룹은 이 프로젝트의 핵심 가치를 열정, 협동, 신뢰로
-        정하여 그룹원들이 서로를 도와 각자의 역할을 잘 맡아서 할 수 있도록 하겠습니다.
-    </div>
-    </div>
-    <div>
-    <img src={vision} className="visimg" alt="logo"/>
-    </div>
-    </div>
-        
+        <div className='body'>
+            <div>
+                <p className='sub_title'>
+                    비전
+                </p>
+                <p className='vis'>"Be an Architect"</p>
+            </div>
+            <div>
+                <div className='pp'> 카카오SW아카데미를 통해 코딩만 하는 코더가 아닌 소프트웨어의 기획, 설계, 관리, 감독 역량을 갖춘 아키텍트가 되는 것을 목표로 합니다.
+                </div>
+            </div>
+            <div className='introduce'>
+                <h2>3 in 1</h2>
+                <div >
+                    소프트웨어공학과, 컴퓨터공학과, 산업경영공학과로 이루어져 <br />
+                    다양한 학과의 시선에서 인사이트를 얻고 새로운 발견이 가능한 팀<br />
+                </div>
+            </div>
+            <div className='introduce'>
+                <h2>Beyond the limitation</h2>
+                <div >
+                    현재에 안주하지 않고 <br />
+                    배움을 갈망하는 팀<br />
+                </div>
+            </div>
+            <div>
+                <img src={vision} className="visimg" alt="logo"/>
+            </div>
+        </div>
+
     )
 }
 

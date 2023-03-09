@@ -10,7 +10,10 @@
 }
 .vis {
     text-align : center;
-    font-size: 20px;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 80px;
     
     
 }
@@ -50,7 +53,7 @@
 .visimg {
     width:100%;
     object-fit:cover;
-    position:absolute;
+
 }
 .logo {
     font-size: 60px;
@@ -61,8 +64,10 @@
     margin: auto;
 }
 .pp{
-    color: #444;
-    font-weight: 300;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .log img {
