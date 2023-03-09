@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/home.css'
+import logo from '../images/team_logo.png';
 
 const Home = () => {
     return (
@@ -11,7 +12,7 @@ const Home = () => {
           <h1>CREATE.</h1>
         </div>
         <div className='main'>
-          <h2>카카오 99%</h2>
+          <img src={logo} alt="팀로고" />
           <h2>Welcome to Our Team Page</h2>
         </div>
       </div>

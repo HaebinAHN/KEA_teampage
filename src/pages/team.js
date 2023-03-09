@@ -1,15 +1,15 @@
 import './css/pages.css';
 
-import pjs from './박재석.png'
-import pdy from './박도영.png'
-import skd from './서강덕.png'
-import ahb from './안해빈.jpg'
-import sjw from './서지원.jpg'
+import pjs from '../images/박재석.png'
+import pdy from '../images/박도영.png'
+import skd from '../images/서강덕.png'
+import ahb from '../images/안해빈.jpg'
+import sjw from '../images/서지원.jpg'
 
 const Team = () =>{
     return (
-        <div>
-            <h2>Team members' info.</h2>
+        <div className='body'>
+            <p className='sub_title'>팀원</p>
             <table align="center">
 
                 <thead align="center">
