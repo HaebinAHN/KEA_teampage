@@ -13,29 +13,29 @@ const Knp = () => {
       
         <ul className="pagination">
           <li className={`page-item ${currentPage === 1 && "disabled"}`}>
-            <a className="page-link" href="#" onClick={() => handlePageClick(currentPage - 1)}>
+            <a className="page-link" href="#!" onClick={() => handlePageClick(currentPage - 1)}>
               Previous
             </a>
           </li>
           <li className={`page-item ${currentPage === 1 && "disabled"}`}>
-            <a className="page-link" href="#" onClick={() => handlePageClick(1)}>
+            <a className="page-link" href="#!" onClick={() => handlePageClick(1)}>
               1
             </a>
           </li>
           <li className={`page-item ${currentPage === 2 && "active"}`}>
-            <a className="page-link" href="#" onClick={() => handlePageClick(2)}>
+            <a className="page-link" href="#!" onClick={() => handlePageClick(2)}>
               2
             </a>
           </li>
   
           
           <li className={`page-item ${currentPage === 3 && "active"}`}>
-            <a className="page-link" href="#" onClick={() => handlePageClick(3)}>
+            <a className="page-link" href="#!" onClick={() => handlePageClick(3)}>
               3
             </a>
           </li>
           <li className={`page-item ${currentPage === 3 && "disabled"}`}>
-            <a className="page-link" href="#" onClick={() => handlePageClick(currentPage + 1)}>
+            <a className="page-link" href="#!" onClick={() => handlePageClick(currentPage + 1)}>
               Next
             </a>
           </li>
