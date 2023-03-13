@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'kakao';
+    src: url('../css/kakao_fonts/KakaoRegular.ttf');
+}
+
 .main {
     margin: auto;
     text-align: center;
@@ -20,6 +25,7 @@
 }
 
 .kea {
+    font-family: 'kakao';
     position: absolute;
     display: block;
     justify-self: left;
@@ -66,8 +72,39 @@
 
 }
 
+.home-card {
+    width: 1000px;
+    height: fit-content;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+div.home-card-text{
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+    float: right;
+}
+
+.home-card img {
+    float: left;
+    width: 50%;
+    height: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 @media all and (max-width: 768px){
     .kea {
         position: relative;
+    }
+    .home-card img {
+        width: 100%;
+    }
+    
+    div.home-card-text {
+        width: 100%;
     }
 }
