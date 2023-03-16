@@ -4,6 +4,7 @@ import Knp from './pages/knp';
 import Vision from './pages/vision';
 import Team from './pages/team';
 import NavigationBar from './Layout/NavigationBar';
+import Investigation from './pages/investigation';
 function App() {
   return (
     <div>
@@ -14,7 +15,7 @@ function App() {
           <Route path='/vision' element={<Vision/>}></Route>
           <Route path='/team' element={<Team/>}></Route>
           <Route path='/knp' element={<Knp/>}></Route>
-          <Route path='/investigation' element={<Home/>}></Route>
+          <Route path='/investigation' element={<Investigation/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
