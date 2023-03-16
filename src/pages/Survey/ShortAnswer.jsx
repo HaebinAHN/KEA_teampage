@@ -23,15 +23,8 @@ function ShortAnswer(props) {
         <>
             <Grid container style={{ marginTop: 20 }}>
                 <Grid xs={11} md={11} item style={{ paddingRight: 16 }}>
-                    질문: <TextField placeholder="질문을 입력하세요" fullWidth onChange={onInputChange} value={item.title} />
+                    질문: <TextField placeholder="내용을 입력하세요" fullWidth onChange={onInputChange} value={item.title} />
                 </Grid>
-                <Grid xs={1} md={1} item>
-                    <Button fullWidth style={{ height: '100%' }} color="secondary" variant="outlined" onClick={onButtonClick}>
-                        +
-                    </Button>
-
-                </Grid>
-
             </Grid>
 
         </>
