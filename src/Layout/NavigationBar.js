@@ -10,7 +10,7 @@ class NavigationBar extends React.Component {
           <li><a href="team">Team</a></li>
           <li><a href="vision">Vision</a></li>
           <li><a href="/knp">About KEA</a></li>
-          <li><a href="/investigation">Investigation</a></li>
+          <li><a href="/Survey">Survey</a></li>
         </ul>
       </nav>
     );
