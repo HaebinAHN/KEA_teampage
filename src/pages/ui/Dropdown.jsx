@@ -2,9 +2,19 @@ import React, { useState } from 'react';
 import MultipleChoice from '../Survey/MultipleChoice';
 import ShortAnswer from '../Survey/ShortAnswer';
 import YesOrNo from '../Survey/YesOrNo';
+import Button from '../ui/Button';
+import SuryeyForm from './SuryeyForm';
+import TextInput from './TextInput';
 
 function Dropdown() {
   const [selectedComponent, setSelectedComponent] = useState('MultipleChoice');
+
+  const [questions, setQuestions] = useState([]);
+
+  const handleAddQuestions = (newQuestion) => {
+      setQuestions([...questions, newQuestion]);
+  };
+
 
   const handleChange = (event) => {
     setSelectedComponent(event.target.value);
@@ -13,11 +23,11 @@ function Dropdown() {
   const renderComponent = () => {
     switch (selectedComponent) {
       case 'MultipleChoice':
-        return <MultipleChoice />;
+        return <MultipleChoice onAddQuestions={handleAddQuestions} questionsLen={questions.length}/>;
       case 'ShortAnswer':
-        return <ShortAnswer />;
+        return <ShortAnswer onAddQuestions={handleAddQuestions} questionsLen={questions.length}/>;
       case 'YesOrNo':
-        return <YesOrNo />;
+        return <YesOrNo onAddQuestions={handleAddQuestions} questionsLen={questions.length}/>;
       default:
         return null;
     }
@@ -31,6 +41,9 @@ function Dropdown() {
         <option value="YesOrNo">찬부식</option>
       </select>
       {renderComponent()}
+      <div>
+        <SuryeyForm questions={questions}/>
+      </div>
     </div>
   );
 }

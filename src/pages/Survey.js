@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from "styled-components";
 import Button from "./ui/Button";
 import Dropdown from "./ui/Dropdown";
@@ -26,6 +26,7 @@ const Container = styled.div`
 
 function Survey(props) {
     const navigate = useNavigate();
+
     return (
         <Wrapper>
             <Container>
@@ -33,18 +34,6 @@ function Survey(props) {
                 <div>
                     <Dropdown />
                 </div>
-                
-
-
-                <div>
-                    <Button
-                        title="설문 생성"
-                        onClick={() => {
-                            navigate("/Survey");
-                        }}
-                    />
-                </div>
-                
             </Container>
         </Wrapper>
     );
