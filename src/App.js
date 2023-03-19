@@ -5,9 +5,16 @@ import Vision from './pages/vision';
 import Team from './pages/team';
 import Survey from './pages/Survey';
 import NavigationBar from './Layout/NavigationBar';
+
+import React, { useState } from 'react';
+import SurveyItem from './pages/ui/SurveyItem';
+
+
 function App() {
+  
+
   return (
-    <div>
+    <div> 
       <BrowserRouter>
       <NavigationBar/>
         <Routes>
@@ -16,10 +23,13 @@ function App() {
           <Route path='/team' element={<Team/>}></Route>
           <Route path='/knp' element={<Knp/>}></Route>
           <Route path='/Survey' element={<Survey/>}></Route>
+    
         </Routes>
       </BrowserRouter>
+      
     </div>
   );
 }
+
 
 export default App;

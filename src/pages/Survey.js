@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from "styled-components";
 import Button from "./ui/Button";
 import Dropdown from "./ui/Dropdown";
@@ -16,7 +16,6 @@ const Wrapper = styled.div`
 const Container = styled.div`
     width: 100%;
     max-width: 720px;
-
     & > * {
         :not(:last-child) {
             margin-bottom: 16px;
@@ -26,6 +25,7 @@ const Container = styled.div`
 
 function Survey(props) {
     const navigate = useNavigate();
+
     return (
         <Wrapper>
             <Container>
@@ -33,18 +33,6 @@ function Survey(props) {
                 <div>
                     <Dropdown />
                 </div>
-                
-
-
-                <div>
-                    <Button
-                        title="설문 생성"
-                        onClick={() => {
-                            navigate("/Survey");
-                        }}
-                    />
-                </div>
-                
             </Container>
         </Wrapper>
     );
