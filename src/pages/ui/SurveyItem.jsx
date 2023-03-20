@@ -11,6 +11,7 @@ function SurveyItem(props) {
     function handleDeleteClick() {
         onDelete(question.id);
     }
+    
 
 
     function renderOptions() {
