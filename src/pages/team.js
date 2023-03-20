@@ -55,7 +55,7 @@ const Team = () => {
 
                     <div className="card">
                         <h3>서지원</h3>
-                        <h3>SEO JI ONE</h3>
+                        <h3>SEO JI WON</h3>
                         <img src={sjw} alt="Placeholder Image" />
                         <div align="center" className='member-role'>MEMBER</div>
                         <p className='member-info'>🧑‍💻 Software Engineering</p>
@@ -68,7 +68,7 @@ const Team = () => {
 
                     <div className="card">
                         <h3>안해빈</h3>
-                        <h3>AN HAE BIN</h3>
+                        <h3>AHN HAE BIN</h3>
                         <img src={ahb} alt="Placeholder Image" />
                         <div align="center" className='member-role'>MEMBER</div>
                         <p className='member-info'>🧑‍💻 Software Engineering</p>

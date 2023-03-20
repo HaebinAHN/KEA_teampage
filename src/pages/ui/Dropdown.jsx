@@ -3,7 +3,11 @@ import MultipleChoice from '../Survey/MultipleChoice';
 import ShortAnswer from '../Survey/ShortAnswer';
 import YesOrNo from '../Survey/YesOrNo';
 import Button from '../ui/Button';
+<<<<<<< HEAD
 import SurveyForm from './SurveyForm';
+=======
+import SuryeyForm from './SuryeyForm';
+>>>>>>> 52f0e6ac2460d3d383bce55b21c857dc39f27fa3
 import TextInput from './TextInput';
 
 function Dropdown() {
@@ -42,7 +46,11 @@ function Dropdown() {
       </select>
       {renderComponent()}
       <div>
+<<<<<<< HEAD
         <SurveyForm questions={questions} setQuestions={setQuestions} />
+=======
+        <SuryeyForm questions={questions}/>
+>>>>>>> 52f0e6ac2460d3d383bce55b21c857dc39f27fa3
       </div>
     </div>
   );
