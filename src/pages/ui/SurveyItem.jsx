@@ -1,22 +1,17 @@
-<<<<<<< HEAD
+
 import React from 'react';
-=======
-import React from 'react'
->>>>>>> 52f0e6ac2460d3d383bce55b21c857dc39f27fa3
+
 import TextInput from './TextInput';
 
 function SurveyItem(props) {
 
-<<<<<<< HEAD
+
     const { question, onDelete } = props;
 
     function handleDeleteClick() {
         onDelete(question.id);
     }
-=======
-    const { question } = props;
 
->>>>>>> 52f0e6ac2460d3d383bce55b21c857dc39f27fa3
 
     function renderOptions() {
         return question.options.map((option) => (
@@ -25,10 +20,7 @@ function SurveyItem(props) {
             </div>
         ));
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> 52f0e6ac2460d3d383bce55b21c857dc39f27fa3
     switch (question.type) {
         case "shortAnswer":
             return (
@@ -36,10 +28,9 @@ function SurveyItem(props) {
                     <h2>Q.{question.id}</h2>
                     <p>질문: {question.title}</p>
                     <TextInput />
-<<<<<<< HEAD
+
                     <button onClick={handleDeleteClick}>Delete</button>
-=======
->>>>>>> 52f0e6ac2460d3d383bce55b21c857dc39f27fa3
+
                 </div>
             );
         case "multipleChoice":
@@ -48,10 +39,9 @@ function SurveyItem(props) {
                     <h2>Q.{question.id}</h2>
                     <p>질문: {question.title}</p>
                     {renderOptions()}
-<<<<<<< HEAD
+
                     <button onClick={handleDeleteClick}>Delete</button>
-=======
->>>>>>> 52f0e6ac2460d3d383bce55b21c857dc39f27fa3
+
                 </div>
             );
         case "yesOrNo":
@@ -64,17 +54,14 @@ function SurveyItem(props) {
                         <input type="radio" name="myCheckbox" value="false" required /> 거짓
                         <br />
                     </form>
-<<<<<<< HEAD
+
                     <button onClick={handleDeleteClick}>Delete</button>
-=======
->>>>>>> 52f0e6ac2460d3d383bce55b21c857dc39f27fa3
+
                 </div>
             );
     }
 }
 
-<<<<<<< HEAD
+
 export default SurveyItem;
-=======
-export default SurveyItem;
->>>>>>> 52f0e6ac2460d3d383bce55b21c857dc39f27fa3
+

@@ -28,7 +28,7 @@ function MultipleChoice(props) {
         setOptions(newOptions);
     }
     
-<<<<<<< HEAD
+
     function handleDeleteOption(index) {
       const newOptions = [...options];
       newOptions.splice(index, 1);
@@ -49,23 +49,7 @@ function MultipleChoice(props) {
           </label>
         </div>
       ));
-=======
-
-    function renderOptions() {
-        return options.map((option, index) => (
-            <div key={index}>
-                <label>
-                    Option {index + 1}:{' '}
-                    <input
-                        type="text"
-                        value={option.text}
-                        onChange={(event) => handleChangeOptionText(index,event)}
-                    />
-                </label>
-            </div>
-        ));
->>>>>>> 52f0e6ac2460d3d383bce55b21c857dc39f27fa3
-    }
+      }
 
     return (
         <div>
